@@ -1,0 +1,413 @@
+/* Basic page design */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #faf7f2;
+  color: #352c2c;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+h1, h2, h3 {
+  line-height: 1.3;
+}
+
+/* Top of the website */
+header {
+  background-color: #681c29;
+  color: white;
+  text-align: center;
+  padding: 32px 15px 30px;
+  border-bottom: 4px solid #c49a56;
+}
+
+.top-label {
+  color: #e4c48c;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+}
+
+header h1 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.header-name {
+  font-size: 14px;
+  margin: 8px 0 0;
+  color: #f0e4e1;
+}
+
+nav {
+  background-color: #501521;
+  text-align: center;
+  padding: 10px 12px;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus-visible {
+  color: #edd09c;
+  text-decoration: underline;
+}
+
+/* Main page content */
+.container {
+  max-width: 1000px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  padding: 62px 0 70px;
+  border-bottom: 1px solid #e7dbcc;
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.eyebrow, .section-number {
+  color: #a67837;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.welcome h2 {
+  color: #621b29;
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 8px 0 15px;
+}
+
+.welcome-text > p:not(.eyebrow) {
+  max-width: 450px;
+  color: #665d59;
+}
+
+.main-photo {
+  display: block;
+  width: 310px;
+  height: 380px;
+  object-fit: cover;
+  object-position: center 32%;
+  border: 7px solid white;
+  outline: 1px solid #e4d9c9;
+}
+
+.simple-button {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #742335;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.simple-button:hover, .simple-button:focus-visible {
+  background-color: #531724;
+}
+
+/* Section titles and text */
+.section {
+  padding: 62px 0 12px;
+}
+
+.section-number {
+  margin: 0 0 4px;
+}
+
+.section > h2 {
+  color: #651e2c;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 26px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d7bd91;
+}
+
+.section-intro {
+  color: #635754;
+  margin: -4px 0 24px;
+  max-width: 760px;
+}
+
+.content-panel {
+  background-color: white;
+  border: 1px solid #e9e0d7;
+  padding: 27px 32px;
+}
+
+.content-panel h3, .analysis-content h3 {
+  color: #752637;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  margin: 0 0 10px;
+}
+
+.content-panel h3:not(:first-child), .analysis-content h3:not(:first-child) {
+  margin-top: 30px;
+}
+
+.content-panel p, .analysis-content p {
+  margin: 0 0 15px;
+}
+
+.content-panel p:last-child, .analysis-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Information and student photos */
+.profile-details {
+  background-color: #f0e9df;
+  padding: 20px 28px;
+  margin-bottom: 22px;
+  border-left: 4px solid #bb9252;
+}
+
+.profile-details p {
+  margin: 7px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.profile-details strong {
+  color: #681c29;
+  width: 145px;
+  flex-shrink: 0;
+}
+
+.photos-heading {
+  color: #68202e;
+  font-size: 18px;
+  margin: 28px 0 12px;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 16px;
+}
+
+.photo-gallery img {
+  width: calc(50% - 8px);
+  height: 275px;
+  object-fit: cover;
+  object-position: center 42%;
+  border: 5px solid white;
+  outline: 1px solid #e6ddd2;
+}
+
+/* Literary analysis cards - native HTML, no JavaScript */
+.analysis-card {
+  background-color: white;
+  border: 1px solid #e5d9cd;
+  margin-bottom: 14px;
+}
+
+.analysis-card summary {
+  cursor: pointer;
+  padding: 17px 20px;
+  color: #64202d;
+}
+
+.analysis-card summary:hover, .analysis-card summary:focus-visible {
+  background-color: #f8f1e9;
+}
+
+.work-number {
+  color: #ac8144;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 6px;
+  margin-right: 15px;
+}
+
+.work-name {
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+.read-label {
+  font-family: Arial, sans-serif;
+  color: #8c817a;
+  font-size: 12px;
+  float: right;
+  margin-top: 7px;
+}
+
+.analysis-content {
+  padding: 20px 27px 25px;
+  border-top: 1px solid #eadfd4;
+}
+
+.analysis-content .work-info, .analysis-content .work-subtitle {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.analysis-content h3 {
+  margin-top: 24px;
+}
+
+/* Favorite masterpiece */
+.favorite-banner {
+  text-align: center;
+  background-color: #711e2c;
+  color: #f8f1e9;
+  padding: 35px 20px;
+  border-bottom: 5px solid #c49a56;
+}
+
+.favorite-banner p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #e9cb94;
+  margin: 0 0 6px;
+}
+
+.favorite-banner h3 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0 0 6px;
+}
+
+.favorite-banner span {
+  font-size: 14px;
+}
+
+#favorite .content-panel {
+  border-top: none;
+}
+
+.reflection-panel {
+  border-left: 4px solid #b48b4d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #551823;
+  color: #f3e9e5;
+  padding: 32px 15px;
+  margin-top: 65px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 2px 0;
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #e5c38b;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav a {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .welcome {
+    flex-direction: column-reverse;
+    gap: 25px;
+    text-align: center;
+    padding: 38px 0 45px;
+  }
+
+  .welcome h2 {
+    font-size: 34px;
+  }
+
+  .main-photo {
+    width: 230px;
+    height: 280px;
+  }
+
+  .section {
+    padding-top: 45px;
+  }
+
+  .section > h2 {
+    font-size: 28px;
+  }
+
+  .content-panel {
+    padding: 20px;
+  }
+
+  .profile-details {
+    padding: 16px;
+  }
+
+  .profile-details p {
+    display: block;
+  }
+
+  .profile-details strong {
+    display: block;
+    width: auto;
+  }
+
+  .photo-gallery {
+    gap: 10px;
+  }
+
+  .photo-gallery img {
+    height: 190px;
+    width: calc(50% - 5px);
+  }
+
+  .analysis-card summary {
+    padding: 14px 12px;
+  }
+
+  .work-name {
+    font-size: 17px;
+  }
+
+  .work-number {
+    margin-right: 6px;
+    margin-left: 2px;
+  }
+
+  .read-label {
+    display: none;
+  }
+
+  .analysis-content {
+    padding: 17px;
+  }
+}
